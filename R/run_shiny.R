@@ -1,3 +1,16 @@
+#' make a quick shiny app to explore changing a function's parameters
+#'
+#' @param call A character string, or a list of strings, each that evaluates to a call to a plotting function
+#' @param slider_params A list of vectors providing the ranges for each parameter to make a slider for
+#' @param header A character string for the app's title
+#' @return None.
+#' @examples
+#' slider_params = list(A = c(1,0,2.5),B = c('a','b','c'))
+#' call = function(A,B) {
+#'   plot(NA,NA,xlim = c(-1,1),ylim = c(-1,1),main = B)
+#'   symbol(0,0,circle = A,add=T,inches=F)
+#' }
+
 run_shiny = function(call,slider_params,header='',...){
   # call: a (list) of functions that takes as arguments the names of slider_params, plus additional variables in the workspace
   # slider_params: a list of variables and their ranges or a starting value plus a range.
