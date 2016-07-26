@@ -1,0 +1,11 @@
+Package: QuickShinyApp
+Type: Package
+Title: Makes a quick ShinyApp to explore changing inputs to a function
+Version: 0.1.0
+Author: Daniel Runcie
+Maintainer: Daniel Runcie <deruncie@ucdavis.edu>
+Description: the run_shiny() function allows you to quickly make an interactive plot.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: shiny
